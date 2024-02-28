@@ -1,0 +1,382 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 462px;
+  padding: 39px 59px;
+}
+
+/* -------this code write for heading and line drow both side----- */
+
+h1.heading span {
+  background: #fff;
+  padding: 0 6px;
+}
+
+h1.heading {
+  color: #ff6b82;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.9px solid #c8c8c8;
+  line-height: 0.1em;
+  margin-bottom: 28px;
+}
+
+/* radio input style */
+.radio {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 50%;
+  border: 0.9px solid #ff6b82;
+  position: relative;
+  display: inline-block;
+}
+
+.radio .circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 9.04px;
+  height: 9.04px;
+  border-radius: 50%;
+  display: none;
+  background-color: #ff6b82;
+}
+
+/* -----  draw the 3 boxes code is write here------  */
+.box {
+  padding: 20px 22px;
+  width: 100%;
+  border: 0.9px solid #c8c8c8;
+  margin: 20px auto;
+  cursor: pointer;
+  height: 74.11px;
+  position: relative;
+}
+
+.active_box {
+  height: fit-content !important;
+  border: 2px solid #ff6b82;
+}
+
+.active_box .option_section {
+  display: flex !important;
+}
+
+.active_box .radio .circle {
+  display: block !important;
+}
+
+/* Box 1  styles */
+
+#box1 .box_inner {
+  display: flex;
+  align-items: center;
+}
+
+#box1 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#box1 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#box1 .unit_discount {
+  display: flex;
+  align-items: center;
+}
+
+#box1 .unit_discount h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+#box1 .unit_discount span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-left: 10px;
+}
+
+#box1 .unit_row p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  color: #000000;
+}
+
+#box1 .price_row h3 {
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
+}
+
+#box1 .price_row .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  opacity: 30%;
+}
+
+/* Box 2 styles */
+
+#box2 .box_inner {
+  display: flex;
+  align-items: center;
+}
+
+#box2 .most_popular {
+  position: absolute;
+  background-color: #ff6b82;
+  top: -9px;
+  right: 4px;
+  padding: 5.5px 11px;
+  border-radius: 0 0 4px 4px;
+}
+
+#box2 .most_popular p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+}
+
+#box2 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#box2 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#box2 .unit_discount {
+  display: flex;
+  align-items: center;
+}
+
+#box2 .unit_discount h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+#box2 .unit_discount span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-left: 10px;
+}
+
+#box2 .price_row h3 {
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
+  margin-top: 2px;
+}
+
+#box2 .price_row .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  opacity: 30%;
+}
+
+/* Box 3 styles */
+
+#box3 .box_inner {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+#box3 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#box3 .unit_row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#box3 .unit_discount {
+  display: flex;
+  align-items: center;
+}
+
+#box3 .unit_discount h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+#box3 .unit_discount span {
+  padding: 2px 8px;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#box3 .price_row {
+  margin-bottom: 20px;
+}
+
+#box3 .price_row h3 {
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  color: #000000;
+  margin-top: 2px;
+}
+
+#box3 .price_row .price {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  opacity: 30%;
+}
+
+/* options styles */
+.option_section {
+  display: none;
+  margin-left: 25px;
+}
+
+.size_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+
+.color_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.size_section p {
+  margin-left: 20px;
+}
+
+.color_section p,
+.size_section p {
+  font-size: 9.94px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.size {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 9.04px;
+  font-weight: 400;
+  color: #000000;
+}
+
+select {
+  width: 65.98px;
+  height: 25.31px;
+}
+
+.color {
+  margin-top: 10px;
+  display: flex;
+}
+
+.summery {
+  max-width: 341px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summery h3 {
+  color: #ff6b82;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summery span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #ff6b82;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.plus {
+  font-size: 25px;
+  font-weight: 300;
+}
